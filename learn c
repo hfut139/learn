@@ -1,0 +1,198 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+//int age = 30; //全局变量
+//int main()
+//{
+//	int age = 20; //局部变量
+//	double price = 66.6;
+//	printf("age=%d\n", age);  //当局部变量和全局变量定义一样，优先打印局部变量
+//	return 0;
+//	//建议不要将全局和局部变量名字写成一样
+//
+//}
+
+//变量的作用域
+// 1.局部变量
+// 局部变量的作用域是变量所在的局部范围
+// 2.全局变量
+// 全局变量的作用在全部
+//变量的生命周期
+//写一个代码，计算两个整数和
+//scanf 是一个输入函数
+//printf 是一个输出函数
+
+
+//int main()
+//{
+//	int num1 = 0;
+//	int num2 = 0;//初始化
+//	int sum = 0;
+//	scanf("%d %d", &num1, &num2);
+//	sum = num1 + num2;
+//	printf("sum=%d\n", sum);
+//
+//	return 0;
+//}
+
+//1.字面常量
+//2.const修饰的常变量
+//int main()
+//{
+//	const int a = 20;    //const修饰的变量不能被直接修改
+//	a = 30;
+//	printf("%d\n", a);
+//
+//	return 0;
+//
+//
+//}
+
+
+//int main()
+//{
+//	char arr1[] = "abcdef";  //字符串末尾隐藏一个\0
+//	char arr2[] = { 'a' ,'b','c','d','e','f','\0','r','y'}; //字符串结束标志在\0
+//	int num;
+//	num=strlen(arr1);
+//	printf("%s\n", arr1);
+//	printf("%s\n", arr2);
+//	printf("%d\n", num);
+//	printf("%d\n", strlen(arr2));
+//	return 0;
+//}
+
+//%d 打印整形
+//%c 打印字符
+//%s 打印字符串
+//%f 打印float类型数据
+//%lf 打印double类型的数据
+
+//int main()
+//{
+//	//printf("%c\n", 'w');
+//	//printf("%c\n", '\'');
+//	//printf("abcde\n");
+//	//printf("%s\n", "\"");
+//
+//	printf("%c\n", '\120'); //表示八进制数，然后转为10进制数所对应的ASCII
+//	printf("%c\n", '\x80');//表示十六进制数，然后转为10进制数所对应的ASCII
+//
+//	return 0;
+//	
+	
+//}
+
+
+
+//int main()
+//{
+//	int input;
+//	printf("加入比特\n");
+//	printf("要好好学习吗？（1/0）\n");
+//	scanf("%d",&input);
+//
+//	if (input == 1)
+//		printf("好offer");
+//	else
+//		printf("回家卖烤红薯");
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int line=0;
+//	printf("加入比特\n");
+//
+//	while (line < 20000)
+//	{
+//		printf("写代码:%d\n",line);
+//		line++;
+//	}
+//	if (line >= 20000)
+//	{ 
+//		printf("好offer\n");
+//	}
+//	else
+//	{
+//		printf("继续加油\n");
+//	}
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int i=0;
+//	int arr[10] = { 1,4,5,7,8,3,0,6,2,9 };
+//	while (i < 10)
+//	{
+//		printf("arr[i]=%d\n", arr[i]);
+//		i++;
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	//float a = 7 / 2;   //除号两端都是整数，执行的是整数除法，如果两端只要有一个浮点数就执行浮点数除法
+//	float a = 7 / 2.0;
+//	int b = 7 % 2;   //取模，两端只能为整数
+//	printf("%.1f\n", a);
+//	printf("%d\n", b);
+//
+//	return 0;
+//}
+
+
+//在c语言中，0表示假，非0表示真
+//int main()
+//{
+//	int flag =0;
+//	if (!flag)  //  !表示反操作，当if后面括号为真，才执行if括号里面的
+//	{
+//		printf("hehe");
+//	}
+//	else
+//	{
+//		printf("wewe");
+//	}
+//	return 0;
+//}
+
+int main()
+{
+	//sizeof 是操作符，是单目操作符
+	//int a = 3;
+	//printf("%d\n", sizeof(a));
+	//
+	//int arr[10] = { 0 };
+	//printf("%d\n", sizeof(arr)); //计算整个数组大小
+
+	//int a = 10;
+	//int b = a++;  //后置++，先使用（先赋给b），后++
+	//printf("%d\n", b);
+	//printf("%d\n", a);
+
+	//int a = 10;
+	//int b = ++a;  //前置++，先++，后赋值
+	//printf("%d\n", b);
+	//printf("%d\n", a);
+
+	//int a = 10;
+	//int b = --a;  //前置--，先--，后赋值
+	//printf("%d\n", b);
+	//printf("%d\n", a);
+
+
+	//int a = 10;
+	//int b = a--;  //后置--，先赋值，后--
+	//printf("%d\n", b);
+	//printf("%d\n", a);
+
+	int a = 5.6;
+	printf("%d",a);
+
+	return 0;
+}
